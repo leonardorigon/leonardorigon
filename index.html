@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rigon Leonardo Assistenza | PC a Domicilio Padova</title>
+  <style>
+    :root {
+      --primary: #1abc9c;
+      --dark: #2c3e50;
+      --light: #ecf0f1;
+      --accent: #3498db;
+      --radius: 12px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      color: var(--dark);
+    }
+
+    .cta {
+      background: var(--accent);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.3rem;
+      margin: 2rem 0;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: var(--radius);
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #16a085;
+    }
+
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: var(--radius);
+      margin-top: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: var(--radius);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rigon Leonardo Assistenza</h1>
+    <p>Manutenzione e Pulizia PC a domicilio - Padova</p>
+  </header>
+
+  <section>
+    <h2>Servizi Offerti</h2>
+    <div class="card">
+      <h3>Pulizia Base - 39€</h3>
+      <p>Soffiaggio interno + pulizia esterna + controllo ventole.</p>
+    </div>
+    <div class="card">
+      <h3>Pulizia Pro - 59€</h3>
+      <p>Come sopra + cambio pasta termica + pulizia contatti.</p>
+    </div>
+    <div class="card">
+      <h3>VelocizzaPC - 79€</h3>
+      <p>Pulizia Pro + ottimizzazione software + backup consigliato.</p>
+    </div>
+
+    <h2>Chi Sono</h2>
+    <p>Mi chiamo Leonardo Rigon, ho 22 anni, sono perito informatico con 2 anni di esperienza nel settore. Ora offro assistenza professionale direttamente a casa tua.</p>
+
+    <h2>Come Funziona</h2>
+    <ol>
+      <li>Contattami e prenota l'intervento</li>
+      <li>Arrivo direttamente a domicilio con l'attrezzatura</li>
+      <li>In 30–60 minuti il tuo PC torna veloce e pulito</li>
+    </ol>
+
+    <div class="cta">
+      Prenota ora il tuo intervento:
+    </div>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+      <label for="nome">Nome e Cognome</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="telefono">Telefono</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="servizio">Seleziona il servizio</label>
+      <select id="servizio" name="servizio">
+        <option value="Pulizia Base">Pulizia Base - 39€</option>
+        <option value="Pulizia Pro">Pulizia Pro - 59€</option>
+        <option value="VelocizzaPC">VelocizzaPC - 79€</option>
+      </select>
+
+      <label for="data">Data preferita per l’intervento</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="messaggio">Messaggio opzionale</label>
+      <textarea id="messaggio" name="messaggio" rows="4"></textarea>
+
+      <button class="btn" type="submit">Invia Prenotazione</button>
+    </form>
+
+    <h2>Contatti</h2>
+    <p>📞 WhatsApp: <a href="https://wa.me/39XXXXXXXXXX">39 XXX XXX XXX</a></p>
+    <p>📧 Email: <a href="mailto:assistenza@rigonleonardo.it">assistenza@rigonleonardo.it</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Rigon Leonardo Assistenza - Padova
+  </footer>
+</body>
+</html>
